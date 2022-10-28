@@ -1,0 +1,2 @@
+#!/bin/bash
+/home/steam/steamcmd.sh +force_install_dir /atlas +login anonymous +app_update 1006030 +quit

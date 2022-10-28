@@ -1,3 +1,2 @@
 #!/bin/bash
-cd /atlas/ShooterGame/Binaries/Linux
-./ShooterGameServer "$@"
+docker run -v ~/atlas-node/temp:/atlas --network atlas antihax/atlas-node /start-server Ocean?ServerX=0?ServerY=0?AltSaveDirectoryName=00?ServerAdminPassword=123?QueryPort=5000?Port=6000?MapPlayerLocation=true -log -server -NOCONSOLE
