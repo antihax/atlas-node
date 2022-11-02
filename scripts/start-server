@@ -9,8 +9,5 @@ fi
 
 export DISPLAY=:20
 Xvfb :20 -screen 0 1366x768x16 &
-
-x11vnc -display :20 -passwd noentryplz -N -forever >>/mnt/atlas-server/x11vnc.log 2>&1 &
 sleep 1
-xterm > /dev/null 2>&1 &
 wine /atlas/ShooterGame/Binaries/Win64/ShooterGameServer.exe "$@"
